@@ -1,0 +1,8 @@
+# Kalafong Health & Training
+# robots.txt
+# Update SITE_URL below with the final confirmed domain if it changes.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://kalafonghealthandtraining.co.za/sitemap.xml

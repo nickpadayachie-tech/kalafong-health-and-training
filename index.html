@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <!--
+    =====================================================
+    KALAFONG HEALTH & TRAINING — SITE CONFIGURATION
+    =====================================================
+    SITE_URL: replace the value below with the final confirmed
+    domain once it is available (e.g. https://kalafonghealthandtraining.co.za/).
+    Do not use "#" placeholders for real URLs.
+    Callback phone for WhatsApp: 060 496 2901 / +27 60 496 2901
+    =====================================================
+    -->
+    <meta name="title" content="Kalafong Health & Training | Occupational Health Services in Qwaqwa">
+    <meta name="description" content="Kalafong Health & Training provides occupational health screening and employee health assessments in Phuthaditjhaba, Qwaqwa and across the Free State.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Kalafong Health & Training">
+    <meta name="geo.region" content="ZA-FS">
+    <meta name="geo.placename" content="Phuthaditjhaba, Qwaqwa">
+    <meta name="theme-color" content="#228B22">
+
+    <title>Kalafong Health & Training | Occupational Health Services in Qwaqwa</title>
+
+    <!-- Canonical (update SITE_URL with the final domain) -->
+    <link rel="canonical" href="https://kalafonghealthandtraining.co.za/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kalafong Health & Training">
+    <meta property="og:title" content="Kalafong Health & Training | Occupational Health Services in Qwaqwa">
+    <meta property="og:description" content="Kalafong Health & Training provides occupational health screening and employee health assessments in Phuthaditjhaba, Qwaqwa and across the Free State.">
+    <meta property="og:url" content="https://kalafonghealthandtraining.co.za/">
+    <meta property="og:image" content="https://kalafonghealthandtraining.co.za/kalafong-health-training-logo.png">
+    <meta property="og:image:alt" content="Kalafong Health & Training">
+    <meta property="og:locale" content="en_ZA">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Kalafong Health & Training | Occupational Health Services in Qwaqwa">
+    <meta name="twitter:description" content="Occupational health screening and employee health assessments in Phuthaditjhaba, Qwaqwa and the Free State.">
+    <meta name="twitter:image" content="https://kalafonghealthandtraining.co.za/kalafong-health-training-logo.png">
+
+    <!-- Local Business Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Kalafong Health & Training",
+        "description": "Occupational health screening and employee health assessment services in Phuthaditjhaba, Qwaqwa and the Free State.",
+        "url": "https://kalafonghealthandtraining.co.za/",
+        "logo": "https://kalafonghealthandtraining.co.za/kalafong-health-training-logo.png",
+        "telephone": "+27604962901",
+        "email": "kalafong.health1@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "721C Mahanke Street, Beirut",
+            "addressLocality": "Phuthaditjhaba",
+            "addressRegion": "Qwaqwa, Free State",
+            "postalCode": "9868",
+            "addressCountry": "ZA"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "17:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "description": "By appointment"
+            }
+        ],
+        "areaServed": ["Qwaqwa", "Phuthaditjhaba", "Free State", "South Africa"]
+    }
+    </script>
+
+    <!-- Organization Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Kalafong Health & Training",
+        "url": "https://kalafonghealthandtraining.co.za/",
+        "logo": "https://kalafonghealthandtraining.co.za/kalafong-health-training-logo.png",
+        "telephone": "+27604962901",
+        "email": "kalafong.health1@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "721C Mahanke Street, Beirut",
+            "addressLocality": "Phuthaditjhaba",
+            "addressRegion": "Qwaqwa, Free State",
+            "postalCode": "9868",
+            "addressCountry": "ZA"
+        }
+    }
+    </script>
+
+    <!-- FAQ Structured Data (content is visible on page) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is occupational health screening?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Occupational health screening involves health assessments carried out to help determine whether an employee is physically and mentally suited to the requirements of their specific job duties."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What does an occupational health assessment include?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Depending on the requirements of the role and the occupational health assessment, appropriate tests may include a physical examination, BMI assessment, vision screening, audiometry, spirometry and laboratory tests."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you provide pre-employment screening?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Pre-employment screening involves appropriate health assessments before an employee starts work, according to the requirements of the role."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you provide annual employee health screening?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We provide periodic and annual occupational health screening for employees to support ongoing workplace health monitoring."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you provide on-site workplace screening?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Where available, we can provide occupational health screening at the client's premises in Qwaqwa and the Free State."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where is Kalafong Health & Training located?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kalafong Health & Training is located at 721C Mahanke Street, Beirut, Phuthaditjhaba, Qwaqwa, 9868, Free State, South Africa."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you provide screening in Qwaqwa and the Free State?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We provide occupational health screening services in Phuthaditjhaba, Qwaqwa and across the Free State, including on-site screening where available."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can a company book employee screening?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can book employee screening by calling 060 496 2901 or 081 776 6274, emailing kalafong.health1@gmail.com, or using the contact form on this website."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What medical tests may be included in occupational health screening?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Depending on the requirements of the role and the occupational health assessment, appropriate tests may include a physical examination, BMI, vision screening, audiometry, spirometry, laboratory tests and specialised tests."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I contact Kalafong Health & Training?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can contact Kalafong Health & Training by phone on 060 496 2901 or 081 776 6274, by email at kalafong.health1@gmail.com, or via the contact form on this website."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="kalafong-health-training-logo.png" alt="Kalafong Health & Training" class="logo-img" width="130" height="120" fetchpriority="high">
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#on-site" class="nav-link">On-Site</a></li>
+                <li><a href="#tests" class="nav-link">Medical Tests</a></li>
+                <li><a href="#location" class="nav-link">Location</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" aria-label="Introduction">
+        <div class="hero-content">
+            <div class="hero-badge">Occupational Health Services in Qwaqwa and the Free State</div>
+            <p class="hero-brand-name">Kalafong Health &amp; Training</p>
+            <h1 class="hero-title">
+                Occupational Health Services &amp; Employee Screening
+            </h1>
+            <p class="hero-subtitle">
+                Providing employee health screening to check physical and mental fitness for specific job duties and safety from workplace hazards, in Phuthaditjhaba, Qwaqwa and across the Free State.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Book Screening</a>
+                <a href="#on-site" class="btn btn-secondary">Request On-Site Screening</a>
+                <a href="#services" class="btn btn-secondary">Our Services</a>
+            </div>
+            <div class="hero-features">
+                <div class="feature">
+                    <span class="feature-icon">✓</span>
+                    <span>Black Female-Owned</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">✓</span>
+                    <span>We Come to You</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">✓</span>
+                    <span>Occupational Health Nurse</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="kalafong-health-training-logo.png" alt="Kalafong Health & Training" class="hero-logo" width="420" height="386" fetchpriority="high">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" aria-label="About Us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Your Trusted Occupational Health Partner</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-lead">
+                        Kalafong Health &amp; Training provides professional occupational health screening services in Qwaqwa and the Free State, owned and operated by a dedicated Black female occupational health nurse.
+                    </p>
+                    <p>
+                        We provide employee health screening services to check physical and mental fitness for specific job duties and safety from workplace hazards.
+                    </p>
+                    <p class="about-highlight">
+                        <strong class="bold-dark">We come to you, or you come to us!</strong> - Flexible workplace health assessment solutions tailored to your company's needs.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">7+</span>
+                            <span class="stat-label">Screening Tests</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Service Types</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Commitment</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <h3>Our Mission</h3>
+                        <p>To provide professional occupational health screening services that support workplace safety and employee wellbeing across the Free State.</p>
+                        <div class="mission-icon">🏥</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services" aria-label="Occupational Health Screening Services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">Occupational Health Screening Services</h2>
+                <p class="section-subtitle">We offer a complete range of occupational health screening services for workplaces in Qwaqwa and the Free State</p>
+            </div>
+
+            <!-- Occupational Health Overview -->
+            <div class="occupational-health-intro">
+                <h3>What Is Occupational Health Screening?</h3>
+                <p>
+                    Occupational health screening involves health assessments carried out to help determine whether an employee is physically and mentally suited to the requirements of their specific job duties. Employers use these workplace health assessments to check employee wellbeing, monitor ongoing health and support workplace safety.
+                </p>
+                <p>
+                    Screening can help assess fitness for specific work duties and can be conducted at the client's premises where offered. Assessment requirements may vary according to the employee's role, workplace and occupational health needs.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card" id="pre-employment-screening">
+                    <div class="service-icon">👔</div>
+                    <h3 class="service-title">Pre-Employment Screening</h3>
+                    <p class="service-description">
+                        Pre-employment health assessments for new employees before they start work, according to the requirements of the role. Helps assess employee fitness for work.
+                    </p>
+                    <ul class="service-features">
+                        <li>Physical examination</li>
+                        <li>Medical history review</li>
+                        <li>Fitness for work assessment</li>
+                    </ul>
+                    <a href="#pre-employment" class="service-link">Learn more about pre-employment screening</a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card" id="periodic-health-screening">
+                    <div class="service-icon">🔄</div>
+                    <h3 class="service-title">Periodic / Annual Screening</h3>
+                    <p class="service-description">
+                        Periodic and annual employee health screening to support ongoing workplace health monitoring and detect any occupational health issues early.
+                    </p>
+                    <ul class="service-features">
+                        <li>Annual health assessments</li>
+                        <li>Progress monitoring</li>
+                        <li>Early detection</li>
+                    </ul>
+                    <a href="#periodic" class="service-link">Learn more about periodic employee screening</a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card" id="exit-medical-screening">
+                    <div class="service-icon">🚪</div>
+                    <h3 class="service-title">Exit Medical Screening</h3>
+                    <p class="service-description">
+                        Exit medical screening for employees leaving an organisation, with appropriate occupational health assessment and documentation.
+                    </p>
+                    <ul class="service-features">
+                        <li>Exit health assessment</li>
+                        <li>Medical certificate</li>
+                        <li>Health documentation</li>
+                    </ul>
+                    <a href="#exit-medical" class="service-link">Learn more about exit medical screening</a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card" id="return-to-work-screening">
+                    <div class="service-icon">💪</div>
+                    <h3 class="service-title">Return-to-Work Screening</h3>
+                    <p class="service-description">
+                        Return-to-work health assessments to help determine readiness for employees returning after illness or injury.
+                    </p>
+                    <ul class="service-features">
+                        <li>Fitness evaluation</li>
+                        <li>Work readiness assessment</li>
+                        <li>Accommodation recommendations</li>
+                    </ul>
+                    <a href="#return-to-work" class="service-link">Learn more about return-to-work screening</a>
+                </div>
+
+                <!-- Service 5: On-site -->
+                <div class="service-card" id="on-site-occupational-health">
+                    <div class="service-icon">🚗</div>
+                    <h3 class="service-title">On-Site Workplace Screening</h3>
+                    <p class="service-description">
+                        We come to you! Convenient on-site occupational health screening for businesses and employees at workplace premises in Qwaqwa and the Free State, where available.
+                    </p>
+                    <ul class="service-features">
+                        <li>Mobile screening at your premises</li>
+                        <li>Minimal employee downtime</li>
+                        <li>Convenient scheduling</li>
+                    </ul>
+                    <a href="#on-site" class="service-link">Learn more about on-site workplace screening</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- On-Site Screening Section -->
+    <section id="on-site" class="on-site" aria-label="On-Site Occupational Health Screening">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">We Come to You</span>
+                <h2 class="section-title">On-Site Occupational Health Screening</h2>
+                <p class="section-subtitle">Convenient workplace health screening at your premises in Qwaqwa and the Free State</p>
+            </div>
+            <div class="on-site-content">
+                <div class="on-site-text">
+                    <p>
+                        Where available, Kalafong Health &amp; Training can provide occupational health screening at the client's premises. This is a convenient option for businesses that want employee health assessments conducted on-site with minimal disruption to the workday.
+                    </p>
+                    <p>
+                        We come to you, or you come to us - flexible workplace screening solutions tailored to your company's needs.
+                    </p>
+                    <a href="#contact" class="btn btn-primary">Request On-Site Screening</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Service Sections -->
+    <section id="pre-employment" class="service-detail" aria-label="Pre-Employment Screening">
+        <div class="container">
+            <div class="service-detail-header">
+                <span class="section-tag">Pre-Employment</span>
+                <h2 class="section-title">Pre-Employment Screening</h2>
+            </div>
+            <div class="service-detail-body">
+                <p>
+                    Pre-employment screening involves appropriate health assessments before an employee starts work, according to the requirements of the role. These pre-employment screenings help employers and occupational health professionals assess whether a candidate is physically and mentally suited to the demands of the position.
+                </p>
+                <p>
+                    Depending on the requirements of the role and the occupational health assessment, appropriate tests may include a physical examination, medical history review and other relevant checks. Not every candidate will receive every test - assessments are tailored to the role and workplace requirements.
+                </p>
+                <a href="#contact" class="service-link-inline">Request employee screening</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="periodic" class="service-detail" aria-label="Periodic and Annual Employee Screening">
+        <div class="container">
+            <div class="service-detail-header">
+                <span class="section-tag">Periodic</span>
+                <h2 class="section-title">Periodic &amp; Annual Employee Screening</h2>
+            </div>
+            <div class="service-detail-body">
+                <p>
+                    Periodic and annual employee health screening is carried out to support ongoing workplace health monitoring for existing employees. Regular checks help employers and occupational health professionals monitor employee wellbeing over time and identify occupational health concerns early.
+                </p>
+                <p>
+                    These periodic screenings support workplace health monitoring so that any changes in an employee's health can be followed up appropriately. Assessment requirements may vary according to the employee's role, workplace and occupational health needs.
+                </p>
+                <a href="#contact" class="service-link-inline">Request employee screening</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="exit-medical" class="service-detail" aria-label="Exit Medical Screening">
+        <div class="container">
+            <div class="service-detail-header">
+                <span class="section-tag">Exit</span>
+                <h2 class="section-title">Exit Medical Screening</h2>
+            </div>
+            <div class="service-detail-body">
+                <p>
+                    Exit medical screening is carried out for employees leaving an organisation, with appropriate occupational health assessment and documentation. It provides a professional record of the employee's health status at the time of leaving and helps identify any work-related conditions where applicable.
+                </p>
+                <p>
+                    Exit screening requirements may vary according to the workplace and circumstances. We provide clear, professional documentation to support your organisation.
+                </p>
+                <a href="#contact" class="service-link-inline">Request employee screening</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="return-to-work" class="service-detail" aria-label="Return-to-Work Screening">
+        <div class="container">
+            <div class="service-detail-header">
+                <span class="section-tag">Return to Work</span>
+                <h2 class="section-title">Return-to-Work Screening</h2>
+            </div>
+            <div class="service-detail-body">
+                <p>
+                    Return-to-work health assessments are carried out to help determine readiness for employees returning after illness or injury. These assessments provide information that can support a safe return to the workplace.
+                </p>
+                <p>
+                    Return-to-work screening is designed to support the return process rather than to make medical decisions about an employee's condition. Assessment requirements may vary according to the employee's role, workplace and occupational health needs.
+                </p>
+                <a href="#contact" class="service-link-inline">Request employee screening</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tests Section -->
+    <section id="tests" class="tests" aria-label="Occupational Health Medical Tests">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Medical Tests</span>
+                <h2 class="section-title">Occupational Health Medical Tests</h2>
+                <p class="section-subtitle">Depending on the requirements of the role and the occupational health assessment, appropriate tests may include:</p>
+            </div>
+            <div class="tests-grid">
+                <!-- Test 1 -->
+                <div class="test-card">
+                    <div class="test-number">01</div>
+                    <div class="test-icon">🩺</div>
+                    <h3 class="test-title">Physical Examination</h3>
+                    <p class="test-description">Checks vital signs, blood pressure, pulse, and overall body systems</p>
+                </div>
+
+                <!-- Test 2 -->
+                <div class="test-card">
+                    <div class="test-number">02</div>
+                    <div class="test-icon">⚖️</div>
+                    <h3 class="test-title">Body Mass Index (BMI)</h3>
+                    <p class="test-description">Measures height and weight to calculate body mass index</p>
+                </div>
+
+                <!-- Test 3 -->
+                <div class="test-card">
+                    <div class="test-number">03</div>
+                    <div class="test-icon">👁️</div>
+                    <h3 class="test-title">Vision Screening</h3>
+                    <p class="test-description">Tests eyesight and colour vision capabilities</p>
+                </div>
+
+                <!-- Test 4 -->
+                <div class="test-card">
+                    <div class="test-number">04</div>
+                    <div class="test-icon">👂</div>
+                    <h3 class="test-title">Audiometry</h3>
+                    <p class="test-description">Tests hearing levels and auditory function</p>
+                </div>
+
+                <!-- Test 5 -->
+                <div class="test-card">
+                    <div class="test-number">05</div>
+                    <div class="test-icon">🫁</div>
+                    <h3 class="test-title">Spirometry</h3>
+                    <p class="test-description">Tests lung functioning and breathing capacity</p>
+                </div>
+
+                <!-- Test 6 -->
+                <div class="test-card">
+                    <div class="test-number">06</div>
+                    <div class="test-icon">🔬</div>
+                    <h3 class="test-title">Laboratory Testing</h3>
+                    <p class="test-description">Urine, blood glucose, or drug and alcohol screening</p>
+                </div>
+
+                <!-- Test 7 -->
+                <div class="test-card">
+                    <div class="test-number">07</div>
+                    <div class="test-icon">📷</div>
+                    <h3 class="test-title">Specialised Testing</h3>
+                    <p class="test-description">X-ray and other specialised diagnostic tests</p>
+                </div>
+            </div>
+            <p class="tests-note">
+                Not every employee receives every test. The appropriate tests depend on the requirements of the role and the occupational health assessment. Assessment requirements may vary according to the employee's role, workplace and occupational health needs.
+            </p>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location" aria-label="Our Location">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Find Us</span>
+                <h2 class="section-title">Serving Businesses in Qwaqwa and the Free State</h2>
+                <p class="section-subtitle">Kalafong Health &amp; Training is conveniently located in Beirut, Phuthaditjhaba, Qwaqwa</p>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="location-card">
+                        <div class="location-icon">📍</div>
+                        <h3>Our Address</h3>
+                        <p>Kalafong Health &amp; Training<br>721C Mahanke Street, Beirut<br>Phuthaditjhaba, Qwaqwa<br>9868, Free State<br>South Africa</p>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon">⏰</div>
+                        <h3>Operating Hours</h3>
+                        <p>Monday - Friday: 08:00 - 17:00<br>Saturday: By Appointment<br>Sunday: Closed</p>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon">🚗</div>
+                        <h3>We Come to You!</h3>
+                        <p>Can't visit us? We offer on-site workplace screening at your premises throughout the Free State, where available.</p>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon">📞</div>
+                        <h3>Get in Touch</h3>
+                        <p>Call <a href="tel:+27604962901">060 496 2901</a> or <a href="tel:+27817766274">081 776 6274</a> to book workplace health screening.</p>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=721C+Mahanke+Street+Beirut+Phuthaditjhaba+Qwaqwa+9868+South+Africa&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Kalafong Health & Training location map - 721C Mahanke Street, Beirut, Phuthaditjhaba, Qwaqwa, 9868">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq" aria-label="Frequently Asked Questions">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Answers to common questions about occupational health screening at Kalafong Health &amp; Training</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3 class="faq-question">What is occupational health screening?</h3>
+                    <p class="faq-answer">Occupational health screening involves health assessments carried out to help determine whether an employee is physically and mentally suited to the requirements of their specific job duties.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What does an occupational health assessment include?</h3>
+                    <p class="faq-answer">Depending on the requirements of the role and the occupational health assessment, appropriate tests may include a physical examination, BMI assessment, vision screening, audiometry, spirometry and laboratory tests.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you provide pre-employment screening?</h3>
+                    <p class="faq-answer">Yes. Pre-employment screening involves appropriate health assessments before an employee starts work, according to the requirements of the role.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you provide annual employee health screening?</h3>
+                    <p class="faq-answer">Yes. We provide periodic and annual occupational health screening for employees to support ongoing workplace health monitoring.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you provide on-site workplace screening?</h3>
+                    <p class="faq-answer">Yes. Where available, we can provide occupational health screening at the client's premises in Qwaqwa and the Free State.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Where is Kalafong Health &amp; Training located?</h3>
+                    <p class="faq-answer">Kalafong Health &amp; Training is located at 721C Mahanke Street, Beirut, Phuthaditjhaba, Qwaqwa, 9868, Free State, South Africa.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you provide screening in Qwaqwa and the Free State?</h3>
+                    <p class="faq-answer">Yes. We provide occupational health screening services in Phuthaditjhaba, Qwaqwa and across the Free State, including on-site screening where available.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How can a company book employee screening?</h3>
+                    <p class="faq-answer">You can book employee screening by calling <a href="tel:+27604962901">060 496 2901</a> or <a href="tel:+27817766274">081 776 6274</a>, emailing <a href="mailto:kalafong.health1@gmail.com">kalafong.health1@gmail.com</a>, or using the contact form on this website.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What medical tests may be included in occupational health screening?</h3>
+                    <p class="faq-answer">Depending on the requirements of the role and the occupational health assessment, appropriate tests may include a physical examination, BMI, vision screening, audiometry, spirometry, laboratory tests and specialised tests.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How can I contact Kalafong Health &amp; Training?</h3>
+                    <p class="faq-answer">You can contact Kalafong Health &amp; Training by phone on <a href="tel:+27604962901">060 496 2901</a> or <a href="tel:+27817766274">081 776 6274</a>, by email at <a href="mailto:kalafong.health1@gmail.com">kalafong.health1@gmail.com</a>, or via the contact form on this website.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-label="Contact Us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact Kalafong Health &amp; Training</h2>
+                <p class="section-subtitle">Ready to schedule your employee screening? Reach out to us today!</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-left">
+                    <div class="contact-info-box">
+                        <h3>Contact Information</h3>
+                        <p class="contact-intro">Fill out the form or reach us directly using the information below.</p>
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                                </div>
+                                <div class="detail-content">
+                                    <span class="detail-label">Phone</span>
+                                    <a href="tel:+27604962901" class="detail-value">060 496 2901</a>
+                                    <a href="tel:+27817766274" class="detail-value">081 776 6274</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                                </div>
+                                <div class="detail-content">
+                                    <span class="detail-label">Email</span>
+                                    <a href="mailto:kalafong.health1@gmail.com" class="detail-value">kalafong.health1@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                </div>
+                                <div class="detail-content">
+                                    <span class="detail-label">Address</span>
+                                    <span class="detail-value">721C Mahanke Street</span>
+                                    <span class="detail-value">Beirut, Phuthaditjhaba</span>
+                                    <span class="detail-value">Qwaqwa, 9868, Free State</span>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                                </div>
+                                <div class="detail-content">
+                                    <span class="detail-label">Hours</span>
+                                    <span class="detail-value">Mon - Fri: 08:00 - 17:00</span>
+                                    <span class="detail-value">Sat: By Appointment</span>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                </div>
+                                <div class="detail-content">
+                                    <span class="detail-label">WhatsApp</span>
+                                    <a href="https://wa.me/27604962901" target="_blank" rel="noopener noreferrer" class="detail-value">Chat with us on WhatsApp</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <span class="social-label">Chat With Us</span>
+                            <div class="social-icons">
+                                <a href="https://wa.me/27604962901" target="_blank" rel="noopener noreferrer" class="social-icon-link whatsapp-icon" aria-label="WhatsApp">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <div class="contact-form-card">
+                        <h3>Book Employee Screening</h3>
+                        <p class="form-subtitle">Fill out the form below to request employee screening or a quotation. We'll get back to you shortly.</p>
+                        <form class="contact-form" id="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" required aria-required="true">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Your phone number" autocomplete="tel" required aria-required="true">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" placeholder="Your email address" autocomplete="email" required aria-required="true">
+                                </div>
+                                <div class="form-group">
+                                    <label for="company">Company Name</label>
+                                    <input type="text" id="company" name="company" placeholder="Your company (optional)" autocomplete="organization">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="service">Service Required *</label>
+                                    <select id="service" name="service" required aria-required="true">
+                                        <option value="" disabled selected>Select a service</option>
+                                        <option value="pre-employment">Pre-Employment Screening</option>
+                                        <option value="periodic">Periodic / Annual Screening</option>
+                                        <option value="exit-medical">Exit Medical Screening</option>
+                                        <option value="return-to-work">Return to Work Screening</option>
+                                        <option value="on-site">On-Site Screening</option>
+                                        <option value="other">Other (Specify in message)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="employees">Number of Employees</label>
+                                    <select id="employees" name="employees">
+                                        <option value="" disabled selected>Select number</option>
+                                        <option value="1-10">1 - 10 employees</option>
+                                        <option value="11-50">11 - 50 employees</option>
+                                        <option value="51-100">51 - 100 employees</option>
+                                        <option value="101-250">101 - 250 employees</option>
+                                        <option value="250+">250+ employees</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Tell us about your screening requirements..." required aria-required="true"></textarea>
+                            </div>
+                            <p class="form-note">Please do not include detailed personal medical information in this form. Our team will guide you on what is needed for your assessment.</p>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Request a Quote</span>
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                            </button>
+                        </form>
+                        <div class="form-success" id="form-success" style="display: none;" role="status" aria-live="polite">
+                            <div class="success-icon">✓</div>
+                            <h4>Message Sent Successfully!</h4>
+                            <p>Thank you for contacting us. We'll get back to you shortly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="kalafong-health-training-logo.png" alt="Kalafong Health & Training" class="footer-logo" width="130" height="120" loading="lazy">
+                    <p class="footer-tagline">Professional Occupational Health Screening Services in Qwaqwa and the Free State</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#on-site">On-Site Screening</a></li>
+                        <li><a href="#tests">Medical Tests</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Get In Touch</h4>
+                    <div class="footer-contact-links">
+                        <p><a href="tel:+27604962901">060 496 2901</a></p>
+                        <p><a href="tel:+27817766274">081 776 6274</a></p>
+                        <p><a href="mailto:kalafong.health1@gmail.com">kalafong.health1@gmail.com</a></p>
+                        <p><a href="https://wa.me/27604962901" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kalafong Health &amp; Training. All rights reserved.</p>
+                <p class="designed-by">Designed by <a href="https://www.mpcconsulting.co.za" target="_blank" rel="noopener noreferrer">MPC Media</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/27604962901?text=Hello%20Sister%20Martinah%2C%20I%20would%20like%20to%20inquire%20about%20occupational%20health%20screening." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" width="32" height="32">
+            <path fill="#FFFFFF" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-tooltip">Chat with Sister Martinah</span>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+            <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

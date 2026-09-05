@@ -1,0 +1,18 @@
+# Business documents (private - do not publish)
+*.pdf
+*.docx
+*.zip
+Invoice*
+Service Level Agreement*
+
+# Working notes
+kalafong and training information.txt
+New Text Document.txt
+
+# Unused duplicate logo (use kalafong-health-training-logo.png)
+transparent logo.png
+
+# OS / editor
+Thumbs.db
+.DS_Store
+*.swp
