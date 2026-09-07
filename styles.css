@@ -931,6 +931,13 @@ textarea:focus-visible {
     transition: var(--transition-fast);
 }
 
+.detail-content a.detail-value {
+    display: inline-block;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
 a.detail-value:hover {
     color: #90EE90;
 }
