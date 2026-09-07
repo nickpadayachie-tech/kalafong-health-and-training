@@ -1,3 +1,6 @@
+# Private folder (do not publish)
+_private/
+
 # Business documents (private - do not publish)
 *.pdf
 *.docx

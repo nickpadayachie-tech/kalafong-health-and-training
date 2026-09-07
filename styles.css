@@ -1122,6 +1122,8 @@ a.detail-value:hover {
 
 .footer-logo {
     height: 60px;
+    width: auto;
+    object-fit: contain;
     margin-bottom: 15px;
 }
 
