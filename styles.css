@@ -65,6 +65,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {
@@ -1518,6 +1519,8 @@ a.detail-value:hover {
     color: var(--medical-green);
     font-weight: 600;
     text-decoration: underline;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .faq-answer a:hover {
@@ -1559,6 +1562,8 @@ a.detail-value:hover {
 .footer-contact-links a {
     color: rgba(255, 255, 255, 0.7);
     transition: var(--transition-fast);
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .footer-contact-links a:hover {
