@@ -6,12 +6,12 @@ const navToggle = document.getElementById('nav-toggle');
 const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 const scrollTopBtn = document.getElementById('scroll-top');
-const sections = document.querySelectorAll('section[id]');
 
 // ========================================
 // Mobile Navigation Toggle
 // ========================================
 function updateNavA11y() {
+    if (!navToggle || !navMenu) return;
     const isOpen = navMenu.classList.contains('active');
     navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 }
@@ -22,20 +22,24 @@ function toggleMobileMenu() {
     updateNavA11y();
 }
 
-navToggle.addEventListener('click', toggleMobileMenu);
+if (navToggle && navMenu) {
+    navToggle.addEventListener('click', toggleMobileMenu);
+}
 
 // Close mobile menu when clicking on a link
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        navToggle.classList.remove('active');
-        navMenu.classList.remove('active');
-        updateNavA11y();
+        if (navToggle && navMenu) {
+            navToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+            updateNavA11y();
+        }
     });
 });
 
 // Close mobile menu when clicking outside
 document.addEventListener('click', (e) => {
-    if (!navbar.contains(e.target) && navMenu.classList.contains('active')) {
+    if (navbar && navMenu && navToggle && !navbar.contains(e.target) && navMenu.classList.contains('active')) {
         navToggle.classList.remove('active');
         navMenu.classList.remove('active');
         updateNavA11y();
@@ -43,9 +47,24 @@ document.addEventListener('click', (e) => {
 });
 
 // ========================================
-// Smooth Scroll Navigation
+// Active Nav Link Highlighting (per page)
+// ========================================
+function setActiveNav() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        const href = link.getAttribute('href');
+        if (href === currentPage) {
+            link.classList.add('active');
+        }
+    });
+}
+
+// ========================================
+// Smooth Scroll for In-Page Anchor Links
 // ========================================
 function smoothScroll(targetId) {
+    if (!targetId || targetId === '#') return;
     const targetSection = document.querySelector(targetId);
     if (targetSection) {
         const headerOffset = 80;
@@ -59,45 +78,15 @@ function smoothScroll(targetId) {
     }
 }
 
-// Add smooth scroll to all nav links
-navLinks.forEach(link => {
+// Handle same-page anchor links (e.g. #home, #contact on the current page)
+document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        if (!href || href === '#') return;
         e.preventDefault();
-        const targetId = link.getAttribute('href');
-        smoothScroll(targetId);
+        smoothScroll(href);
     });
 });
-
-// Smooth scroll for hero buttons
-document.querySelectorAll('.hero-cta .btn, .cta-card .btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = btn.getAttribute('href');
-        smoothScroll(targetId);
-    });
-});
-
-// ========================================
-// Active Section Detection
-// ========================================
-function updateActiveNav() {
-    const scrollPosition = window.scrollY + 100;
-
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        const sectionId = section.getAttribute('id');
-
-        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${sectionId}`) {
-                    link.classList.add('active');
-                }
-            });
-        }
-    });
-}
 
 // ========================================
 // Navbar Scroll Effect
@@ -121,12 +110,14 @@ function handleScrollTopVisibility() {
     }
 }
 
-scrollTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+if (scrollTopBtn) {
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
-});
+}
 
 // ========================================
 // Scroll Event Listeners
@@ -136,7 +127,6 @@ let ticking = false;
 function onScroll() {
     if (!ticking) {
         window.requestAnimationFrame(() => {
-            updateActiveNav();
             handleNavbarScroll();
             handleScrollTopVisibility();
             ticking = false;
@@ -189,7 +179,6 @@ document.head.appendChild(style);
 const whatsappFloat = document.querySelector('.whatsapp-float');
 if (whatsappFloat) {
     whatsappFloat.addEventListener('click', function(e) {
-        // Log click for analytics (optional)
         console.log('WhatsApp button clicked');
     });
 }
@@ -200,12 +189,11 @@ if (whatsappFloat) {
 const contactForm = document.getElementById('contact-form');
 const formSuccess = document.getElementById('form-success');
 
-if (contactForm) {
+if (contactForm && formSuccess) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         if (!formIsValid()) return;
 
-        // Get form data
         const formData = new FormData(contactForm);
         const name = formData.get('name');
         const phone = formData.get('phone');
@@ -214,7 +202,7 @@ if (contactForm) {
         const service = formData.get('service');
         const employees = formData.get('employees');
         const message = formData.get('message');
-        
+
         // Create WhatsApp message
         let whatsappMessage = `Hello Sister Martinah,\n\n`;
         whatsappMessage += `I would like to inquire about occupational health screening.\n\n`;
@@ -225,18 +213,14 @@ if (contactForm) {
         whatsappMessage += `*Service Required:* ${service}\n`;
         if (employees) whatsappMessage += `*Number of Employees:* ${employees}\n`;
         whatsappMessage += `*Message:* ${message}\n`;
-        
-        // Encode message for WhatsApp URL
+
         const encodedMessage = encodeURIComponent(whatsappMessage);
-        
-        // Open WhatsApp with pre-filled message
+
         window.open(`https://wa.me/27604962901?text=${encodedMessage}`, '_blank');
-        
-        // Show success message
+
         contactForm.style.display = 'none';
         formSuccess.style.display = 'block';
-        
-        // Reset form after 5 seconds
+
         setTimeout(() => {
             contactForm.reset();
             contactForm.style.display = 'flex';
@@ -253,7 +237,6 @@ if (contactForm) {
             errorEl = document.createElement('span');
             errorEl.className = 'field-error';
             errorEl.setAttribute('role', 'alert');
-            field.setAttribute('aria-describedby', errorEl.id || '');
             group.appendChild(errorEl);
         }
         const uniqueId = `error-${field.id || Math.random().toString(36).slice(2)}`;
@@ -311,8 +294,7 @@ if (contactForm) {
 // Keyboard Navigation
 // ========================================
 document.addEventListener('keydown', (e) => {
-    // Close mobile menu on Escape
-    if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+    if (e.key === 'Escape' && navMenu && navMenu.classList.contains('active')) {
         navToggle.classList.remove('active');
         navMenu.classList.remove('active');
         updateNavA11y();
@@ -326,7 +308,6 @@ let resizeTimer;
 window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
-        // Reset mobile menu on desktop
         if (window.innerWidth > 768) {
             navToggle.classList.remove('active');
             navMenu.classList.remove('active');
@@ -339,14 +320,12 @@ window.addEventListener('resize', () => {
 // Initialize
 // ========================================
 document.addEventListener('DOMContentLoaded', () => {
-    // Initial calls
-    updateActiveNav();
+    setActiveNav();
     handleNavbarScroll();
     handleScrollTopVisibility();
-    
-    // Add loaded class for CSS animations
+
     document.body.classList.add('loaded');
-    
+
     console.log('Kalafong Health & Training - Website Loaded Successfully');
 });
 
@@ -364,7 +343,6 @@ function throttle(func, limit) {
     };
 }
 
-// Apply throttling to scroll handler
 window.removeEventListener('scroll', onScroll);
 window.addEventListener('scroll', throttle(onScroll, 100));
 

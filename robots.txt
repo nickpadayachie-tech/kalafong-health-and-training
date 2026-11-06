@@ -5,4 +5,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kalafonghealthandtraining.co.za/sitemap.xml
+Sitemap: https://www.kalafonghealthandtraining.co.za/sitemap.xml
